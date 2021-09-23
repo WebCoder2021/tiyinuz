@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1> {{salom}}</h1>
+   <a href="{% url 'logout' %}">Logaut</a>
+
+   </a>
+<hr>
+   <!-- {% for ct in ctg %}
+  <p> {{ct.name}}</p>
+{% endfor %}
+<hr>
+
+<hr>
+   {% for ct in type %}
+<p>   {{ct.name}}</p>
+{% endfor %}
+<hr>
+
+<hr>
+   {% for ct in news %}
+   <p>{{ ct.title }}</p>
+   <p>{{ ct.subtitle }}</p>
+   <p>{{ ct.content }}</p>
+   <img src="{{ct.img.url}}" alt="">
+   <p>{{ ct.category }}</p>
+   <p>{{ ct.new_type }}</p>
+   <p>{{ ct.views }}</p>
+   <p>{{ ct.is_view }}</p>
+
+{% endfor %} -->
+
+
+  {% for ct in peak_news %}
+  <p>{{ ct.title }}</p>
+   <p>{{ ct.subtitle }}</p>
+   <p>{{ ct.content }}</p>
+   <img src="{{ct.img.url}}" alt="">
+   <p>{{ ct.category }}</p>
+   <p>{{ ct.news_type }}</p>
+   <p>{{ ct.views }}</p>
+   <p>{{ ct.is_view }}</p>
+{% endfor %}
+<hr>
+<hr>
+</body>
+</html>
